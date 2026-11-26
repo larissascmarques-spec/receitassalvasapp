@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer">
+<title>Seu pedido | Dos Salvos para a Mesa</title><link rel="stylesheet" href="/estilo.css"><script src="/pedido.js" defer></script></head>
+<body><header><div class="frame bar"><span>Dos Salvos para a Mesa</span><span class="private">Área do pedido</span></div></header>
+<main class="frame"><div class="hero"><div><p class="eyebrow">SEU LIVRO DE RECEITAS</p><h1>Prepare seu livro</h1><p>Envie seus Salvos do Instagram e escolha o que você gosta de cozinhar. Você poderá voltar por este mesmo link para baixar o PDF.</p></div><img class="hero-image" src="/mockup-campanha.webp" width="1320" height="805" alt="Livro Dos Salvos para a Mesa e receitas salvas no celular"></div>
+<section class="status" aria-live="polite"><div><h2 id="estado">Verificando pedido…</h2><p id="mensagem"></p></div><a id="download" class="button" hidden>Baixar meu livro</a></section>
+<form id="pedido" hidden>
+<section class="card"><h2>Envie seus Salvos</h2><p>Use o ZIP da exportação ou o JSON de publicações salvas. Limite de 20 MB.</p>
+<label class="upload" for="arquivo"><span class="upload-icon" aria-hidden="true">↑</span><strong id="nome-arquivo">Escolher ZIP ou JSON</strong><small>Arquivos .zip e .json</small></label>
+<input id="arquivo" type="file" name="arquivo" accept=".zip,.json" required>
+<details><summary>Como encontrar o arquivo</summary><p>Na Central de Contas do Instagram, procure a opção de exportar suas informações. Selecione a conta, escolha exportar para o dispositivo, selecione as publicações salvas e escolha JSON. Quando o Instagram preparar o arquivo, baixe o ZIP e envie aqui.</p></details></section>
+<section class="card"><h2>Conte o que você gosta de cozinhar</h2>
+<fieldset><legend>Quais categorias você prefere?</legend><div class="opcoes"><label><input type="checkbox" name="categorias" value="De tudo um pouco"> De tudo um pouco</label>
+<label><input type="checkbox" name="categorias" value="Pães e massas"> Pães e massas</label><label><input type="checkbox" name="categorias" value="Refeições"> Refeições</label><label><input type="checkbox" name="categorias" value="Lanches"> Lanches</label><label><input type="checkbox" name="categorias" value="Sobremesas"> Sobremesas</label></div></fieldset>
+<label for="pessoas" class="field">Para quantas pessoas costuma cozinhar?</label><select id="pessoas" name="pessoas"><option value="1">1 pessoa</option><option value="2" selected>2 pessoas</option><option value="3">3 pessoas</option><option value="4">4 pessoas</option><option value="5">5 pessoas</option><option value="6">6 pessoas</option><option value="7">7 pessoas</option><option value="8">8 pessoas</option><option value="9">9 pessoas</option><option value="10">10 pessoas</option><option value="11">11 pessoas</option><option value="12">12 pessoas</option></select>
+<label for="evitar" class="field">Ingredientes que prefere evitar <span>(opcional)</span></label><input id="evitar" name="evitar" type="text" maxlength="300" placeholder="Ex.: amendoim, coentro">
+</section>
+<button class="button" type="submit">Enviar Salvos e preferências</button>
+<p id="erro" role="alert"></p><p class="privacy">O arquivo é usado para montar seu pedido. Você não precisa informar sua senha do Instagram.</p>
+</form></main><footer class="frame">Dos Salvos para a Mesa</footer></body></html>
