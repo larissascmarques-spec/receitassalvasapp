@@ -1,7 +1,7 @@
 from collections import defaultdict
 from decimal import Decimal
 
-from livro import normalize
+from livro import generate_demo, normalize
 
 DIAS = ('Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado', 'Domingo')
 TOTAL = 200
@@ -66,3 +66,10 @@ def montar_bonus(recipes, portions):
     return [('Seu cardápio com lista de compras', plan),
             ('Do livro para o freezer', freezer),
             ('Índice por ingrediente', lookup)]
+
+
+def gerar_edicao(options, links, recovered, catalog):
+    """Build the full edition or report a catalog gap before rendering."""
+    recipes = selecionar(recovered, catalog, options['categorias'])
+    bonuses = montar_bonus(recipes, options['pessoas'])
+    return generate_demo(options, links, recipes, bonuses=bonuses)
