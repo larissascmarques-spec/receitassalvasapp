@@ -1,10 +1,12 @@
+from base64 import urlsafe_b64encode
+from html import escape
 import hmac
 import json
 import os
 import re
 from pathlib import Path
 import secrets
-from urllib.parse import urlencode
+from urllib.parse import parse_qs, urlencode
 
 from fastapi import FastAPI, Request
 from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, RedirectResponse, Response
@@ -83,6 +85,113 @@ async def browser_test_order(request: Request):
     return RedirectResponse('/pedido/' + token, status_code=303, headers=PRIVATE)
 
 
+
+def purchase_config():
+    return (os.getenv('HOTMART_HOTTOK'), os.getenv('HOTMART_PRODUCT_ID'),
+            os.getenv('PEDIDOS_ATIVACAO_CHAVE'))
+
+
+def purchase_digest(secret, purpose, transaction, email=''):
+    return hmac.digest(secret.encode(), json.dumps([purpose, transaction, email]).encode(), 'sha256')
+
+
+def purchase_details(transaction, email):
+    transaction = transaction.strip().upper() if isinstance(transaction, str) else ''
+    email = email.strip().casefold() if isinstance(email, str) else ''
+    if not re.fullmatch(r'HP[A-Z0-9]{5,60}', transaction) or not re.fullmatch(r'[^@\s]+@[^@\s]+\.[^@\s]+', email) or len(email) > 254:
+        raise ValueError('Confira o e-mail da compra e o código da transação.')
+    return transaction, email
+
+
+def activation_page(message='', status=200):
+    info = f'<p role="status">{escape(message)}</p>' if message else ''
+    return HTMLResponse(
+        '<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">'
+        '<meta name="viewport" content="width=device-width, initial-scale=1">'
+        '<title>Ativar meu livro | Dos Salvos para a Mesa</title>'
+        '<link rel="stylesheet" href="/estilo.css"></head><body>'
+        '<main class="frame"><section class="card"><p class="eyebrow">DOS SALVOS PARA A MESA</p>'
+        '<h1>Ativar meu livro</h1><p>Use os dados do comprovante enviado pela Hotmart.</p>'
+        '<form method="post" action="/ativar"><p><label for="email">E-mail da compra</label><br>'
+        '<input id="email" name="email" type="email" autocomplete="email" maxlength="254" required></p>'
+        '<p><label for="transacao">Código da transação</label><br>'
+        '<input id="transacao" name="transacao" type="text" placeholder="HP…" maxlength="62" required></p>'
+        '<p><button class="button" type="submit">Ativar meu livro</button></p></form>'
+        + info + '</section></main></body></html>', status_code=status, headers=PRIVATE)
+
+
+async def bounded_body(request, limit):
+    data = bytearray()
+    async for chunk in request.stream():
+        if len(data) + len(chunk) > limit:
+            raise ValueError('Dados acima do limite.')
+        data.extend(chunk)
+    return bytes(data)
+
+
+@app.get('/ativar')
+async def activate_screen():
+    return activation_page()
+
+
+@app.post('/ativar')
+async def activate_purchase(request: Request):
+    hot_token, product, secret = purchase_config()
+    if not all((hot_token, product, secret)):
+        return activation_page('A ativação ainda está em configuração. Tente novamente mais tarde.', 503)
+    try:
+        fields = parse_qs((await bounded_body(request, 4096)).decode(), max_num_fields=4)
+        transaction, email = purchase_details(fields.get('transacao', [''])[0], fields.get('email', [''])[0])
+        key = purchase_digest(secret, 'aprovacao', transaction, email).hex()
+        approved = await read_blob(f'hotmart/aprovacoes/{key}.json')
+        if approved is None:
+            return activation_page('Compra aprovada não localizada. Confira os dados do comprovante.', 404)
+        token = urlsafe_b64encode(purchase_digest(secret, 'pedido', transaction, email)).decode().rstrip('=')
+        path = order_path(token) + '/pedido.json'
+        if await read_blob(path) is None:
+            try:
+                await save_blob(path, b'{"origem":"hotmart"}', 'application/json')
+            except blob.BlobError:
+                if await read_blob(path) is None:
+                    raise
+        return RedirectResponse('/pedido/' + token, status_code=303, headers=PRIVATE)
+    except ValueError:
+        return activation_page('Confira o e-mail e o código da transação no comprovante.', 400)
+    except blob.BlobError:
+        return activation_page('O armazenamento está temporariamente indisponível.', 503)
+
+
+@app.post('/api/hotmart/webhook')
+async def hotmart_purchase(request: Request):
+    hot_token, product, secret = purchase_config()
+    if not all((hot_token, product, secret)):
+        return problem('Integração ainda não configurada.', 503)
+    if not hmac.compare_digest(request.headers.get('x-hotmart-hottok', '').encode(), hot_token.encode()):
+        return problem('Notificação não autorizada.', 401)
+    try:
+        body = json.loads(await bounded_body(request, 64 * 1024))
+        if body['event'] != 'PURCHASE_APPROVED':
+            return Response(status_code=204, headers=PRIVATE)
+        data = body['data']
+        if str(data['product']['id']) != product or data['purchase']['status'] != 'APPROVED':
+            return Response(status_code=204, headers=PRIVATE)
+        transaction, email = purchase_details(data['purchase']['transaction'], data['buyer']['email'])
+    except (AttributeError, KeyError, TypeError, ValueError, RecursionError):
+        return problem('Notificação inválida.', 400)
+    key = purchase_digest(secret, 'aprovacao', transaction, email).hex()
+    path = f'hotmart/aprovacoes/{key}.json'
+    try:
+        if await read_blob(path) is None:
+            try:
+                await save_blob(path, b'{}', 'application/json')
+            except blob.BlobError:
+                if await read_blob(path) is None:
+                    raise
+    except blob.BlobError:
+        return problem('Tente reenviar a notificação.', 503)
+    return Response(status_code=204, headers=PRIVATE)
+
+
 @app.get('/api/saude')
 async def health():
     return JSONResponse({'api': 'ok', 'modo': 'homologacao',
@@ -140,6 +249,9 @@ async def order(token: str, request: Request):
             return JSONResponse({'status': 'pronto'}, headers=PRIVATE)
         if request.method == 'GET':
             return JSONResponse({'status': 'aguardando'}, headers=PRIVATE)
+        record = await read_blob(path + '/pedido.json')
+        if record == b'{"origem":"hotmart"}':
+            return problem('Seu acesso foi ativado. A produção do livro personalizado ainda está indisponível.', 503)
         raw = bytearray()
         async for data in request.stream():
             if len(raw) + len(data) > MAX_BODY:
