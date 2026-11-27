@@ -66,7 +66,7 @@ async def test_page():
 
 @app.get('/saved_posts.json')
 async def sample_file():
-    if os.getenv('VERCEL_ENV') != 'preview':
+    if os.getenv('VERCEL_ENV') != 'preview' and not os.getenv('PEDIDOS_DEMO_CODIGO'):
         return problem('Arquivo indisponível.', 404)
     return FileResponse(ROOT / 'saved_posts.json', filename='saved_posts.json', headers=PRIVATE)
 
@@ -173,14 +173,23 @@ async def activate_screen():
     return activation_page()
 
 
+async def browser_demo_order():
+    token = secrets.token_urlsafe(32)
+    await save_blob(order_path(token) + '/pedido.json', b'{}', 'application/json')
+    return RedirectResponse('/pedido/' + token, status_code=303, headers=PRIVATE)
+
+
 @app.post('/ativar')
 async def activate_purchase(request: Request):
     hot_token, product, secret = purchase_config()
-    if not all((hot_token, product, secret)):
-        return activation_page('A ativação ainda está em configuração. Tente novamente mais tarde.', 503)
     try:
         fields = parse_qs((await bounded_body(request, 4096)).decode(), max_num_fields=4)
         transaction, email = purchase_details(fields.get('transacao', [''])[0], fields.get('email', [''])[0])
+        demo_code = os.getenv('PEDIDOS_DEMO_CODIGO')
+        if demo_code and email == 'teste@example.com' and hmac.compare_digest(transaction, demo_code):
+            return await browser_demo_order()
+        if not all((hot_token, product, secret)):
+            return activation_page('A ativação ainda está em configuração. Tente novamente mais tarde.', 503)
         key = purchase_digest(secret, 'aprovacao', transaction, email).hex()
         approved = await read_blob(f'hotmart/aprovacoes/{key}.json')
         if approved is None:
