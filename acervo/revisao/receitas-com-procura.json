@@ -283,7 +283,12 @@
       "alergenicos_identificados": [],
       "estado_alergenicos": "triagem preliminar; conferir derivados, rótulos e contaminação cruzada",
       "revisao": "texto conferido; teste culinário pendente",
-      "photo": null,
+      "photo": {
+        "id": 34705700,
+        "source": "https://www.pexels.com/photo/34705700/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
       "freezer": null,
       "demanda": {
         "termo": "Batata frita na air fryer",
@@ -463,7 +468,12 @@
       ],
       "estado_alergenicos": "triagem preliminar; conferir derivados, rótulos e contaminação cruzada",
       "revisao": "texto conferido; teste culinário pendente",
-      "photo": null,
+      "photo": {
+        "id": 27588102,
+        "source": "https://www.pexels.com/photo/27588102/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
       "freezer": null,
       "demanda": {
         "termo": "Frango xadrez",
@@ -634,7 +644,12 @@
       },
       "teste_culinario": "pendente",
       "revisao_alergenicos": "pendente",
-      "photo": null,
+      "photo": {
+        "id": 28503619,
+        "source": "https://www.pexels.com/photo/28503619/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
       "freezer": null,
       "youtube_referencia": "https://www.youtube.com/watch?v=qqmXk6VkmuQ"
     },
@@ -796,7 +811,12 @@
       },
       "teste_culinario": "pendente",
       "revisao_alergenicos": "pendente",
-      "photo": null,
+      "photo": {
+        "id": 8992842,
+        "source": "https://www.pexels.com/photo/8992842/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
       "freezer": null
     },
     {
@@ -1425,7 +1445,12 @@
       },
       "teste_culinario": "pendente",
       "revisao_alergenicos": "pendente",
-      "photo": null,
+      "photo": {
+        "id": 30635679,
+        "source": "https://www.pexels.com/photo/30635679/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
       "freezer": null
     },
     {
@@ -1527,8 +1552,283 @@
       },
       "teste_culinario": "pendente",
       "revisao_alergenicos": "pendente",
-      "photo": null,
+      "photo": {
+        "id": 39070796,
+        "source": "https://www.pexels.com/photo/39070796/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
       "freezer": null
+    },
+    {
+      "id": "rabanada-com-acucar-e-canela",
+      "title": "Rabanada com açúcar e canela",
+      "category": "Lanches",
+      "yield_text": "8 fatias",
+      "ingredients": [
+        "1 pão amanhecido cortado em 8 fatias",
+        "250 ml leite",
+        "2 ovos",
+        "25 g açúcar para o leite",
+        "45 g açúcar para finalizar",
+        "3 g canela",
+        "120 ml óleo"
+      ],
+      "steps": [
+        "Misture o leite com o açúcar e bata os ovos em outro prato.",
+        "Passe as fatias rapidamente no leite e depois nos ovos. Doure no óleo em fogo médio, virando uma vez, até o ovo cozinhar.",
+        "Escorra e passe pelo açúcar misturado com a canela."
+      ],
+      "alergenicos_identificados": [
+        "trigo",
+        "ovo",
+        "leite"
+      ],
+      "revisao_alergenicos": "pendente",
+      "teste_culinario": "pendente",
+      "photo": {
+        "id": 15820912,
+        "source": "https://www.pexels.com/photo/15820912/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
+      "freezer": null,
+      "demanda": {
+        "termo": "Rabanada tradicional",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "seção de receitas mais buscadas ou populares do portal",
+        "escopo": "procura pelo tipo de prato"
+      }
+    },
+    {
+      "id": "cafe-gelado-com-leite",
+      "title": "Café gelado com leite",
+      "category": "Lanches",
+      "yield_text": "2 copos",
+      "ingredients": [
+        "160 ml café forte",
+        "220 ml leite gelado",
+        "160 g gelo",
+        "12 g açúcar"
+      ],
+      "steps": [
+        "Dissolva o açúcar no café ainda quente e deixe esfriar.",
+        "Divida o gelo e o leite entre dois copos.",
+        "Despeje o café já frio por cima e mexa antes de beber."
+      ],
+      "alergenicos_identificados": [
+        "leite"
+      ],
+      "revisao_alergenicos": "pendente",
+      "teste_culinario": "pendente",
+      "photo": {
+        "id": 6895939,
+        "source": "https://www.pexels.com/photo/6895939/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
+      "freezer": null,
+      "demanda": {
+        "termo": "Café gelado",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "seção de receitas mais buscadas ou populares do portal",
+        "escopo": "procura pelo tipo de prato"
+      }
+    },
+    {
+      "id": "peito-de-frango-fatiado-na-air-fryer",
+      "title": "Peito de frango fatiado na air fryer",
+      "category": "Refeições",
+      "yield_text": "3 porções",
+      "ingredients": [
+        "480 g peito de frango sem pele",
+        "15 ml azeite",
+        "15 ml suco de limão",
+        "2 dentes de alho",
+        "4 g sal",
+        "2 g páprica doce"
+      ],
+      "steps": [
+        "Corte o frango em filés de espessura semelhante e misture com azeite, limão, alho, sal e páprica.",
+        "Distribua em uma camada na air fryer a 190 °C e vire na metade.",
+        "Confira 74 °C no centro da parte mais grossa antes de retirar. Deixe repousar alguns minutos e fatie."
+      ],
+      "alergenicos_identificados": [],
+      "revisao_alergenicos": "pendente",
+      "teste_culinario": "pendente",
+      "photo": {
+        "id": 9412996,
+        "source": "https://www.pexels.com/photo/9412996/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
+      "freezer": null,
+      "demanda": {
+        "termo": "Peito de frango na Air fryer",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "seção de receitas mais buscadas ou populares do portal",
+        "escopo": "procura pelo tipo de prato"
+      }
+    },
+    {
+      "id": "arroz-a-grega-com-legumes",
+      "title": "Arroz à grega com legumes",
+      "category": "Refeições",
+      "yield_text": "4 porções",
+      "ingredients": [
+        "220 g arroz cru",
+        "420 ml água quente",
+        "100 g cenoura",
+        "75 g pimentão vermelho",
+        "90 g ervilha",
+        "80 g cebola",
+        "18 ml óleo",
+        "4 g sal"
+      ],
+      "steps": [
+        "Refogue a cebola no óleo. Junte a cenoura em cubos e o arroz e mexa por um minuto.",
+        "Adicione água quente e sal. Cozinhe tampado em fogo baixo até o arroz ficar macio.",
+        "Misture a ervilha e o pimentão, tampe por alguns minutos com o fogo desligado e solte os grãos com um garfo."
+      ],
+      "alergenicos_identificados": [],
+      "revisao_alergenicos": "pendente",
+      "teste_culinario": "pendente",
+      "photo": null,
+      "freezer": null,
+      "demanda": {
+        "termo": "Arroz à grega",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "seção de receitas mais buscadas ou populares do portal",
+        "escopo": "procura pelo tipo de prato"
+      }
+    },
+    {
+      "id": "pernil-assado-com-laranja-e-alho",
+      "title": "Pernil assado com laranja e alho",
+      "category": "Refeições",
+      "yield_text": "6 porções",
+      "ingredients": [
+        "1,2 kg pernil suíno sem osso",
+        "180 ml suco de laranja",
+        "4 dentes de alho",
+        "20 ml azeite",
+        "10 g sal",
+        "1 ramo de alecrim"
+      ],
+      "steps": [
+        "Tempere o pernil com alho, azeite, sal, alecrim e metade do suco.",
+        "Coloque em assadeira com o restante do suco. Cubra e asse a 170 °C, regando com o líquido da assadeira.",
+        "Destampe para dourar e confira ao menos 63 °C no centro, com descanso mínimo de 3 minutos antes de fatiar."
+      ],
+      "alergenicos_identificados": [],
+      "revisao_alergenicos": "pendente",
+      "teste_culinario": "pendente",
+      "photo": null,
+      "freezer": null,
+      "demanda": {
+        "termo": "Pernil assado bem temperado",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "seção de receitas mais buscadas ou populares do portal",
+        "escopo": "procura pelo tipo de prato"
+      }
+    },
+    {
+      "id": "caldo-verde-de-batata-couve-e-calabresa",
+      "title": "Caldo verde de batata, couve e calabresa",
+      "category": "Refeições",
+      "yield_text": "5 porções",
+      "ingredients": [
+        "700 g batata",
+        "180 g linguiça calabresa",
+        "130 g couve",
+        "100 g cebola",
+        "2 dentes de alho",
+        "1 litro de água",
+        "15 ml azeite"
+      ],
+      "steps": [
+        "Doure a calabresa fatiada no azeite e reserve. Refogue cebola e alho na mesma panela.",
+        "Cozinhe a batata na água até amaciar e bata com o líquido até ficar cremoso.",
+        "Volte o caldo ao fogo, adicione a calabresa e cozinhe até aquecer bem e a linguiça estar cozida. Incorpore a couve finamente fatiada e cozinhe até murchar."
+      ],
+      "alergenicos_identificados": [],
+      "revisao_alergenicos": "pendente",
+      "teste_culinario": "pendente",
+      "photo": null,
+      "freezer": null,
+      "demanda": {
+        "termo": "Caldo verde",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "seção de receitas mais buscadas ou populares do portal",
+        "escopo": "procura pelo tipo de prato"
+      }
+    },
+    {
+      "id": "pudim-de-pao-com-caramelo",
+      "title": "Pudim de pão com caramelo",
+      "category": "Sobremesas",
+      "yield_text": "8 porções",
+      "ingredients": [
+        "170 g pão amanhecido",
+        "500 ml leite",
+        "3 ovos",
+        "130 g açúcar para o pudim",
+        "100 g açúcar para o caramelo",
+        "40 ml água"
+      ],
+      "steps": [
+        "Faça um caramelo com 100 g de açúcar e a água e distribua na forma.",
+        "Umedeça o pão no leite e bata com ovos e o açúcar do pudim. Despeje na forma caramelizada.",
+        "Asse em banho-maria a 160 °C até firmar. Deixe baixar o calor e refrigere até ficar bem frio antes de desenformar."
+      ],
+      "alergenicos_identificados": [
+        "trigo",
+        "ovo",
+        "leite"
+      ],
+      "revisao_alergenicos": "pendente",
+      "teste_culinario": "pendente",
+      "photo": null,
+      "freezer": null,
+      "demanda": {
+        "termo": "Pudim de pão de liquidificador",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "seção de receitas mais buscadas ou populares do portal",
+        "escopo": "procura pelo tipo de prato"
+      }
+    },
+    {
+      "id": "massa-de-panqueca-de-liquidificador",
+      "title": "Massa de panqueca de liquidificador",
+      "category": "Pães e massas",
+      "yield_text": "8 discos",
+      "ingredients": [
+        "150 g farinha de trigo",
+        "260 ml leite",
+        "2 ovos",
+        "12 ml óleo",
+        "3 g sal"
+      ],
+      "steps": [
+        "Bata o leite, os ovos, o óleo e o sal. Junte a farinha e bata brevemente até alisar.",
+        "Aqueça uma frigideira antiaderente em fogo médio e coloque uma concha pequena, girando a frigideira para espalhar.",
+        "Vire quando as bordas soltarem. Cozinhe brevemente o outro lado e repita com o restante da massa."
+      ],
+      "alergenicos_identificados": [
+        "trigo",
+        "ovo",
+        "leite"
+      ],
+      "revisao_alergenicos": "pendente",
+      "teste_culinario": "pendente",
+      "photo": null,
+      "freezer": null,
+      "demanda": {
+        "termo": "Massa de panqueca simples",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "seção de receitas mais buscadas ou populares do portal",
+        "escopo": "procura pelo tipo de prato"
+      }
     }
   ],
   "salvos_revisados": {}
