@@ -104,20 +104,59 @@ def purchase_details(transaction, email):
 
 
 def activation_page(message='', status=200):
-    info = f'<p role="status">{escape(message)}</p>' if message else ''
+    info = f'<p class="activation-notice" role="alert">{escape(message)}</p>' if message else ''
+    contact = support_link()
+    help_link = (f'<a href="{escape(contact, quote=True)}" target="_blank" rel="noopener noreferrer">'
+                 'Falar com o suporte pelo WhatsApp</a>') if contact else ''
     return HTMLResponse(
-        '<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">'
-        '<meta name="viewport" content="width=device-width, initial-scale=1">'
-        '<title>Ativar meu livro | Dos Salvos para a Mesa</title>'
-        '<link rel="stylesheet" href="/estilo.css"></head><body>'
-        '<main class="frame"><section class="card"><p class="eyebrow">DOS SALVOS PARA A MESA</p>'
-        '<h1>Ativar meu livro</h1><p>Use os dados do comprovante enviado pela Hotmart.</p>'
-        '<form method="post" action="/ativar"><p><label for="email">E-mail da compra</label><br>'
-        '<input id="email" name="email" type="email" autocomplete="email" maxlength="254" required></p>'
-        '<p><label for="transacao">Código da transação</label><br>'
-        '<input id="transacao" name="transacao" type="text" placeholder="HP…" maxlength="62" required></p>'
-        '<p><button class="button" type="submit">Ativar meu livro</button></p></form>'
-        + info + '</section></main></body></html>', status_code=status, headers=PRIVATE)
+        """<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ativar meu livro | Dos Salvos para a Mesa</title>
+<style>
+*{box-sizing:border-box}
+:root{color-scheme:light;--green:#18372d;--cream:#f5eee1;--ivory:#fffcf5;--ink:#29352c;--muted:#535c51;--rust:#8e462d;--line:#d9cdb8}
+body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.5 system-ui,sans-serif}
+.activation-header{border-bottom:1px solid var(--line)}
+.activation-brand{width:min(1120px,calc(100% - 36px));margin:auto;padding:18px 0;color:var(--green);font:700 19px Georgia,serif}
+.activation-layout{width:min(1120px,calc(100% - 36px));margin:clamp(24px,5vw,70px) auto;display:grid;grid-template-columns:1.05fr 1fr;border-radius:22px;overflow:hidden;background:var(--ivory);border:1px solid var(--line);box-shadow:0 20px 56px #44362118}
+.activation-book{display:flex;align-items:center;justify-content:center;padding:28px;background:radial-gradient(ellipse at 50% 45%,#355744,var(--green) 72%)}
+.activation-book img{display:block;width:100%;height:auto;border-radius:12px;box-shadow:0 14px 34px #0f211c55}
+.activation-form{padding:clamp(22px,4vw,54px)}
+.activation-form h1{margin:0 0 12px;color:var(--green);font:400 clamp(36px,4.3vw,60px)/1.04 Georgia,serif;letter-spacing:-.035em}
+.activation-intro{margin:0 0 25px;color:var(--muted)}
+.activation-form label{display:block;margin:0 0 6px;font-weight:650}
+.activation-form input{display:block;width:100%;min-height:48px;margin-bottom:17px;padding:12px 14px;border:1px solid #a79c89;border-radius:9px;background:#fff;color:var(--ink);font:inherit}
+.activation-form input:last-of-type{margin-bottom:7px}
+.activation-form small{display:block;margin:0 0 20px;color:var(--muted);font-size:13px}
+.activation-form button{width:100%;min-height:49px;padding:12px 16px;border:0;border-radius:9px;background:var(--green);color:white;cursor:pointer;font:700 16px system-ui,sans-serif}
+.activation-form button:hover{background:#294d3f}
+.activation-form :focus-visible{outline:3px solid var(--rust);outline-offset:3px}
+.activation-support{margin:17px 0 0;text-align:center;font-size:14px}
+.activation-support a{color:var(--green);text-underline-offset:3px}
+.activation-notice{padding:12px 14px;border-left:3px solid var(--rust);background:#f6e8dc;color:#713927;border-radius:4px}
+@media(max-width:720px){.activation-layout{grid-template-columns:minmax(0,1fr);margin-top:18px}.activation-book{padding:18px}.activation-book img{max-width:420px}.activation-form{padding:24px 20px}}
+</style>
+</head>
+<body>
+<header class="activation-header"><div class="activation-brand">Dos Salvos para a Mesa</div></header>
+<main class="activation-layout">
+<div class="activation-book"><img src="/mockup-campanha.webp" width="1320" height="805" alt="Mockup do livro Dos Salvos para a Mesa"></div>
+<section class="activation-form" aria-labelledby="activation-title">
+<h1 id="activation-title">Ativar meu livro</h1>
+<p class="activation-intro">Use os dados do comprovante enviado pela Hotmart para abrir seu pedido.</p>
+<form method="post" action="/ativar">
+<label for="email">E-mail da compra</label>
+<input id="email" name="email" type="email" autocomplete="email" placeholder="seuemail@exemplo.com" maxlength="254" required>
+<label for="transacao">Código da transação</label>
+<input id="transacao" name="transacao" type="text" placeholder="HP…" autocapitalize="characters" spellcheck="false" maxlength="62" aria-describedby="activation-hint" required>
+<small id="activation-hint">O código começa com HP e aparece no comprovante da Hotmart.</small>
+<button type="submit">Ativar meu livro</button>
+</form>"""
+        + info + (f'<p class="activation-support">{help_link}</p>' if help_link else '')
+        + '</section></main></body></html>', status_code=status, headers=PRIVATE)
 
 
 async def bounded_body(request, limit):
