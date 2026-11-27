@@ -413,9 +413,28 @@ async def download(token: str):
         **PRIVATE, 'Content-Disposition': 'attachment; filename="Dos-Salvos-Para-a-Mesa.pdf"'})
 
 
+
+@app.get('/acervo')
+async def catalog_preview():
+    if os.getenv('VERCEL_ENV') != 'preview':
+        return problem('A prévia do acervo está disponível no ambiente de revisão.', 404)
+    return FileResponse(ROOT / 'acervo' / 'revisao' / 'acervo.html', headers=PRIVATE)
+
+
+@app.get('/acervo-fotos/{filename}')
+async def catalog_photo(filename: str):
+    if os.getenv('VERCEL_ENV') != 'preview' or not re.fullmatch(r'[0-9]{1,12}\.jpg', filename):
+        return problem('Foto indisponível.', 404)
+    path = ROOT / 'acervo' / 'revisao' / 'fotos' / filename
+    if not path.is_file():
+        return problem('Foto indisponível.', 404)
+    return FileResponse(path, headers=PRIVATE)
+
+
 @app.get('/{asset}')
 def asset_file(asset: str):
     if asset not in {'estilo.css', 'pedido.js', 'mockup-campanha.webp'}:
         return problem('Página não encontrada.', 404)
     path = ROOT / (asset if asset.endswith('.webp') else 'public/' + asset)
     return FileResponse(path, headers=PRIVATE)
+

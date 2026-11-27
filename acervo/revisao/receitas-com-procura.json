@@ -30,7 +30,12 @@
       ],
       "estado_alergenicos": "triagem preliminar; conferir derivados, rótulos e contaminação cruzada",
       "revisao": "texto conferido; teste culinário pendente",
-      "photo": null,
+      "photo": {
+        "id": 8614367,
+        "source": "https://www.pexels.com/photo/8614367/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
       "freezer": null,
       "demanda": {
         "termo": "Pão caseiro",
@@ -71,7 +76,12 @@
       ],
       "estado_alergenicos": "triagem preliminar; conferir derivados, rótulos e contaminação cruzada",
       "revisao": "texto conferido; teste culinário pendente",
-      "photo": null,
+      "photo": {
+        "id": 37778433,
+        "source": "https://www.pexels.com/photo/37778433/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
       "freezer": null,
       "demanda": {
         "termo": "Pão de queijo fácil e delicioso",
@@ -114,7 +124,12 @@
       ],
       "estado_alergenicos": "triagem preliminar; conferir derivados, rótulos e contaminação cruzada",
       "revisao": "texto conferido; teste culinário pendente",
-      "photo": null,
+      "photo": {
+        "id": 40646836,
+        "source": "https://www.pexels.com/photo/40646836/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
       "freezer": null,
       "demanda": {
         "termo": "Strogonoff de frango",
@@ -313,7 +328,12 @@
       ],
       "estado_alergenicos": "triagem preliminar; conferir derivados, rótulos e contaminação cruzada",
       "revisao": "texto conferido; teste culinário pendente",
-      "photo": null,
+      "photo": {
+        "id": 37711037,
+        "source": "https://www.pexels.com/photo/37711037/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
       "freezer": null,
       "demanda": {
         "termo": "Bolo de cenoura",
@@ -353,7 +373,12 @@
       ],
       "estado_alergenicos": "triagem preliminar; conferir derivados, rótulos e contaminação cruzada",
       "revisao": "texto conferido; teste culinário pendente",
-      "photo": null,
+      "photo": {
+        "id": 15867169,
+        "source": "https://www.pexels.com/photo/15867169/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
       "freezer": null,
       "demanda": {
         "termo": "Pudim de leite condensado",
@@ -651,7 +676,12 @@
       },
       "teste_culinario": "pendente",
       "revisao_alergenicos": "pendente",
-      "photo": null,
+      "photo": {
+        "id": 40646831,
+        "source": "https://www.pexels.com/photo/40646831/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
       "freezer": null
     },
     {
@@ -806,7 +836,12 @@
       },
       "teste_culinario": "pendente",
       "revisao_alergenicos": "pendente",
-      "photo": null,
+      "photo": {
+        "id": 5949900,
+        "source": "https://www.pexels.com/photo/5949900/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
       "freezer": null
     },
     {
@@ -845,7 +880,12 @@
       },
       "teste_culinario": "pendente",
       "revisao_alergenicos": "pendente",
-      "photo": null,
+      "photo": {
+        "id": 6632446,
+        "source": "https://www.pexels.com/photo/6632446/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
       "freezer": null
     },
     {
@@ -919,7 +959,12 @@
       },
       "teste_culinario": "pendente",
       "revisao_alergenicos": "pendente",
-      "photo": null,
+      "photo": {
+        "id": 7676087,
+        "source": "https://www.pexels.com/photo/7676087/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
       "freezer": null
     },
     {
@@ -958,7 +1003,12 @@
       },
       "teste_culinario": "pendente",
       "revisao_alergenicos": "pendente",
-      "photo": null,
+      "photo": {
+        "id": 10311638,
+        "source": "https://www.pexels.com/photo/10311638/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
       "freezer": null
     },
     {
@@ -1070,7 +1120,12 @@
       },
       "teste_culinario": "pendente",
       "revisao_alergenicos": "pendente",
-      "photo": null,
+      "photo": {
+        "id": 6803031,
+        "source": "https://www.pexels.com/photo/6803031/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
       "freezer": null,
       "youtube_referencia": "https://www.youtube.com/watch?v=1Qz47UHtVgQ"
     },
@@ -1107,6 +1162,368 @@
         "url": "https://www.tudogostoso.com.br/",
         "tipo": "lista de receitas mais buscadas do TudoGostoso",
         "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": null,
+      "freezer": null
+    },
+    {
+      "id": "moqueca-de-peixe-com-leite-de-coco",
+      "title": "Moqueca de peixe com leite de coco",
+      "category": "Refeições",
+      "yield_text": "4 porções",
+      "ingredients": [
+        "600 g peixe branco em postas",
+        "240 g tomate",
+        "150 g pimentão",
+        "120 g cebola",
+        "200 ml leite de coco",
+        "15 ml azeite de dendê",
+        "20 ml suco de limão",
+        "5 g sal",
+        "8 g coentro"
+      ],
+      "steps": [
+        "Tempere o peixe com limão e sal. Fatie cebola, tomate e pimentão.",
+        "Refogue cebola e pimentão no dendê, junte tomate e leite de coco e deixe formar o caldo.",
+        "Acomode as postas, tampe e cozinhe em fogo baixo até o centro atingir 63 °C. Finalize com coentro."
+      ],
+      "alergenicos_identificados": [
+        "peixe"
+      ],
+      "demanda": {
+        "termo": "Moqueca de peixe fácil",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do portal",
+        "escopo": "procura pelo tipo de prato, não por esta formulação"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": {
+        "id": 32252190,
+        "source": "https://www.pexels.com/photo/32252190/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
+      "freezer": null
+    },
+    {
+      "id": "file-de-frango-empanado-crocante",
+      "title": "Filé de frango empanado crocante",
+      "category": "Refeições",
+      "yield_text": "4 porções",
+      "ingredients": [
+        "600 g filé de frango",
+        "60 g farinha de trigo",
+        "2 ovos",
+        "110 g farinha de rosca",
+        "5 g sal",
+        "3 g páprica doce",
+        "120 ml óleo"
+      ],
+      "steps": [
+        "Tempere o frango com sal e páprica. Passe na farinha de trigo, nos ovos batidos e na farinha de rosca.",
+        "Aqueça o óleo em uma frigideira e frite em pequenas levas, virando uma vez para dourar por igual.",
+        "Retire quando a parte mais grossa atingir 74 °C e deixe escorrer sobre uma grade."
+      ],
+      "alergenicos_identificados": [
+        "trigo",
+        "ovo"
+      ],
+      "demanda": {
+        "termo": "Filé de frango empanado",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do portal",
+        "escopo": "procura pelo tipo de prato, não por esta formulação"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": {
+        "id": 39976667,
+        "source": "https://www.pexels.com/photo/39976667/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
+      "freezer": null
+    },
+    {
+      "id": "yakissoba-de-carne-com-legumes",
+      "title": "Yakissoba de carne com legumes",
+      "category": "Refeições",
+      "yield_text": "4 porções",
+      "ingredients": [
+        "250 g macarrão para yakissoba",
+        "360 g alcatra em tiras",
+        "180 g brócolis",
+        "150 g cenoura",
+        "120 g pimentão",
+        "60 ml shoyu",
+        "12 g amido de milho",
+        "180 ml água",
+        "20 ml óleo"
+      ],
+      "steps": [
+        "Cozinhe o macarrão conforme a embalagem. Misture água fria, shoyu e amido.",
+        "Doure a carne em levas, retire e salteie os legumes no óleo até ficarem firmes.",
+        "Volte a carne, junte o molho e mexa até engrossar. Incorpore o macarrão e sirva quente."
+      ],
+      "alergenicos_identificados": [
+        "trigo",
+        "soja"
+      ],
+      "demanda": {
+        "termo": "Yakissoba da casa",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do portal",
+        "escopo": "procura pelo tipo de prato, não por esta formulação"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": {
+        "id": 27135617,
+        "source": "https://www.pexels.com/photo/27135617/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
+      "freezer": null
+    },
+    {
+      "id": "hamburguer-caseiro-no-pao-com-salada",
+      "title": "Hambúrguer caseiro no pão com salada",
+      "category": "Lanches",
+      "yield_text": "4 unidades",
+      "ingredients": [
+        "520 g carne bovina moída",
+        "4 pães de hambúrguer",
+        "130 g tomate",
+        "60 g alface",
+        "70 g cebola roxa",
+        "5 g sal",
+        "10 ml óleo"
+      ],
+      "steps": [
+        "Modele quatro discos e tempere com sal. Corte os pães, fatie tomate e cebola e higienize a alface.",
+        "Doure os discos numa frigideira untada, virando na metade, até o centro atingir 71 °C.",
+        "Toste levemente os pães e monte com a carne e os vegetais."
+      ],
+      "alergenicos_identificados": [
+        "trigo"
+      ],
+      "demanda": {
+        "termo": "Hambúrguer caseiro",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do portal",
+        "escopo": "procura pelo tipo de prato, não por esta formulação"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": {
+        "id": 5860581,
+        "source": "https://www.pexels.com/photo/5860581/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
+      "freezer": null
+    },
+    {
+      "id": "chocolate-quente-cremoso-de-panela",
+      "title": "Chocolate quente cremoso de panela",
+      "category": "Lanches",
+      "yield_text": "3 xícaras",
+      "ingredients": [
+        "500 ml leite",
+        "65 g chocolate meio amargo",
+        "14 g cacau em pó",
+        "12 g amido de milho",
+        "20 g açúcar"
+      ],
+      "steps": [
+        "Dissolva o amido em parte do leite frio e peneire o cacau.",
+        "Junte o leite restante e o açúcar; aqueça em fogo médio, mexendo até ficar levemente cremoso.",
+        "Desligue, acrescente o chocolate picado e mexa até derreter. Sirva quente."
+      ],
+      "alergenicos_identificados": [
+        "leite"
+      ],
+      "demanda": {
+        "termo": "Chocolate quente cremoso",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do portal",
+        "escopo": "procura pelo tipo de prato, não por esta formulação"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": {
+        "id": 6463658,
+        "source": "https://www.pexels.com/photo/6463658/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
+      "freezer": null
+    },
+    {
+      "id": "cappuccino-caseiro-com-espuma-de-leite",
+      "title": "Cappuccino caseiro com espuma de leite",
+      "category": "Lanches",
+      "yield_text": "2 xícaras",
+      "ingredients": [
+        "120 ml café forte",
+        "180 ml leite",
+        "8 g cacau em pó",
+        "8 g açúcar",
+        "1 g canela"
+      ],
+      "steps": [
+        "Prepare o café e misture com cacau e açúcar até dissolver.",
+        "Aqueça o leite sem deixar ferver e bata até formar espuma.",
+        "Divida o café entre duas xícaras, adicione o leite e finalize com a espuma e a canela."
+      ],
+      "alergenicos_identificados": [
+        "leite"
+      ],
+      "demanda": {
+        "termo": "Cappuccino caseiro",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do portal",
+        "escopo": "procura pelo tipo de prato, não por esta formulação"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": {
+        "id": 36010234,
+        "source": "https://www.pexels.com/photo/36010234/",
+        "license": "https://www.pexels.com/license/",
+        "illustrative": true
+      },
+      "freezer": null
+    },
+    {
+      "id": "pure-de-batata-com-manteiga",
+      "title": "Purê de batata com manteiga",
+      "category": "Refeições",
+      "yield_text": "4 porções",
+      "ingredients": [
+        "700 g batata",
+        "130 ml leite",
+        "30 g manteiga",
+        "5 g sal"
+      ],
+      "steps": [
+        "Descasque e corte as batatas em pedaços do mesmo tamanho. Cozinhe até amaciarem por completo.",
+        "Escorra bem e passe ainda quente pelo espremedor.",
+        "Incorpore a manteiga, o sal e o leite aquecido aos poucos até a consistência desejada."
+      ],
+      "alergenicos_identificados": [
+        "leite"
+      ],
+      "demanda": {
+        "termo": "Purê de batata simples e fácil",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do portal",
+        "escopo": "procura pelo tipo de prato, não por esta formulação"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": null,
+      "freezer": null
+    },
+    {
+      "id": "creme-de-milho-com-cebola-dourada",
+      "title": "Creme de milho com cebola dourada",
+      "category": "Refeições",
+      "yield_text": "4 porções",
+      "ingredients": [
+        "340 g milho cozido e escorrido",
+        "260 ml leite",
+        "70 g cebola",
+        "20 g manteiga",
+        "10 g amido de milho",
+        "3 g sal"
+      ],
+      "steps": [
+        "Bata metade do milho com leite e amido.",
+        "Refogue a cebola na manteiga, adicione a mistura batida e o milho restante.",
+        "Cozinhe em fogo médio, mexendo até encorpar. Ajuste o sal e sirva."
+      ],
+      "alergenicos_identificados": [
+        "leite"
+      ],
+      "demanda": {
+        "termo": "Creme de milho",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do portal",
+        "escopo": "procura pelo tipo de prato, não por esta formulação"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": null,
+      "freezer": null
+    },
+    {
+      "id": "salpicao-de-frango-com-maca",
+      "title": "Salpicão de frango com maçã",
+      "category": "Refeições",
+      "yield_text": "6 porções",
+      "ingredients": [
+        "420 g frango cozido e desfiado",
+        "140 g cenoura",
+        "160 g maçã",
+        "100 g ervilha cozida",
+        "130 g maionese",
+        "15 ml suco de limão",
+        "45 g batata palha"
+      ],
+      "steps": [
+        "Rale a cenoura, corte a maçã em cubos e regue com limão.",
+        "Misture com frango, ervilha e maionese e mantenha refrigerado até servir.",
+        "Distribua a batata palha na hora para conservar a crocância."
+      ],
+      "alergenicos_identificados": [
+        "ovo"
+      ],
+      "demanda": {
+        "termo": "Salpicão de frango simples",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do portal",
+        "escopo": "procura pelo tipo de prato, não por esta formulação"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": null,
+      "freezer": null
+    },
+    {
+      "id": "torta-de-frango-de-liquidificador",
+      "title": "Torta de frango de liquidificador",
+      "category": "Lanches",
+      "yield_text": "8 fatias",
+      "ingredients": [
+        "420 g frango cozido e desfiado",
+        "130 g tomate",
+        "100 g cebola",
+        "250 g farinha de trigo",
+        "360 ml leite",
+        "3 ovos",
+        "70 ml óleo",
+        "12 g fermento químico",
+        "5 g sal"
+      ],
+      "steps": [
+        "Refogue cebola e tomate em um pouco do óleo e misture o frango. Reserve.",
+        "Bata leite, ovos, óleo restante e sal. Acrescente farinha e, por último, fermento.",
+        "Alterne massa, recheio e massa em forma untada. Asse a 180 °C até dourar e atingir 74 °C no centro."
+      ],
+      "alergenicos_identificados": [
+        "trigo",
+        "ovo",
+        "leite"
+      ],
+      "demanda": {
+        "termo": "Torta de frango",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do portal",
+        "escopo": "procura pelo tipo de prato, não por esta formulação"
       },
       "teste_culinario": "pendente",
       "revisao_alergenicos": "pendente",
