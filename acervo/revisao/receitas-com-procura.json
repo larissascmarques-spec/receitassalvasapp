@@ -1,0 +1,1118 @@
+{
+  "estado": "revisao_editorial",
+  "publicavel": false,
+  "receitas": [
+    {
+      "id": "pao-caseiro-fofinho",
+      "title": "Pão caseiro fofinho",
+      "category": "Pães e massas",
+      "yield_text": "2 pães pequenos",
+      "ingredients": [
+        "500 g farinha de trigo",
+        "300 ml água morna",
+        "7 g fermento biológico seco",
+        "25 g açúcar",
+        "9 g sal",
+        "30 ml óleo"
+      ],
+      "steps": [
+        "Misture farinha, fermento e açúcar. Junte água e óleo; acrescente sal e sove até a massa ficar lisa.",
+        "Cubra e deixe crescer até quase dobrar. Divida em duas partes, modele e coloque em formas de pão untadas.",
+        "Deixe crescer até a massa ficar leve. Asse a 190 °C por 25 a 35 minutos, até dourar; deixe esfriar sobre uma grade."
+      ],
+      "tags": [
+        "forno",
+        "café da manhã",
+        "econômico"
+      ],
+      "alergenicos_identificados": [
+        "trigo"
+      ],
+      "estado_alergenicos": "triagem preliminar; conferir derivados, rótulos e contaminação cruzada",
+      "revisao": "texto conferido; teste culinário pendente",
+      "photo": null,
+      "freezer": null,
+      "demanda": {
+        "termo": "Pão caseiro",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "youtube_referencia": "https://www.youtube.com/watch?v=GAml0WezdXQ"
+    },
+    {
+      "id": "pao-de-queijo-mineiro",
+      "title": "Pão de queijo mineiro",
+      "category": "Pães e massas",
+      "yield_text": "16 unidades",
+      "ingredients": [
+        "250 g polvilho doce",
+        "100 ml leite",
+        "55 ml óleo",
+        "4 g sal",
+        "1 ovo",
+        "150 g queijo meia-cura ralado"
+      ],
+      "steps": [
+        "Misture polvilho e sal. Aqueça leite e óleo até começar a ferver e despeje aos poucos sobre o polvilho, mexendo.",
+        "Deixe amornar, acrescente o ovo batido e o queijo. Modele 16 bolinhas com as mãos untadas.",
+        "Distribua em assadeira com espaço entre elas e asse a 190 °C por 22 a 28 minutos, até dourar."
+      ],
+      "tags": [
+        "forno",
+        "lanche",
+        "café da manhã"
+      ],
+      "alergenicos_identificados": [
+        "leite",
+        "ovo"
+      ],
+      "estado_alergenicos": "triagem preliminar; conferir derivados, rótulos e contaminação cruzada",
+      "revisao": "texto conferido; teste culinário pendente",
+      "photo": null,
+      "freezer": null,
+      "demanda": {
+        "termo": "Pão de queijo fácil e delicioso",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "youtube_referencia": "https://www.youtube.com/watch?v=_MjIDiJwlhE"
+    },
+    {
+      "id": "estrogonofe-de-frango-e-cogumelos",
+      "title": "Estrogonofe de frango e cogumelos",
+      "category": "Refeições",
+      "yield_text": "4 porções",
+      "ingredients": [
+        "600 g peito de frango em cubos",
+        "150 g cogumelos frescos",
+        "100 g cebola",
+        "15 ml óleo",
+        "30 g extrato de tomate",
+        "10 g mostarda",
+        "200 g creme de leite",
+        "5 g sal"
+      ],
+      "steps": [
+        "Doure o frango em levas no óleo. Reserve e refogue cebola e cogumelos até a água evaporar.",
+        "Volte o frango à panela, incorpore extrato, mostarda e sal; acrescente um pouco de água se necessário e cozinhe até o centro do frango atingir 74 °C.",
+        "Abaixe o fogo, acrescente creme de leite e mexa até aquecer. Sirva com arroz se desejar."
+      ],
+      "tags": [
+        "panela",
+        "almoço",
+        "jantar"
+      ],
+      "alergenicos_identificados": [
+        "leite",
+        "mostarda"
+      ],
+      "estado_alergenicos": "triagem preliminar; conferir derivados, rótulos e contaminação cruzada",
+      "revisao": "texto conferido; teste culinário pendente",
+      "photo": null,
+      "freezer": null,
+      "demanda": {
+        "termo": "Strogonoff de frango",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente"
+    },
+    {
+      "id": "frango-com-batata-doce-na-air-fryer",
+      "title": "Frango com batata-doce na air fryer",
+      "category": "Refeições",
+      "yield_text": "3 porções",
+      "ingredients": [
+        "450 g peito de frango",
+        "500 g batata-doce",
+        "20 ml azeite",
+        "4 g páprica doce",
+        "4 g sal",
+        "15 ml suco de limão"
+      ],
+      "steps": [
+        "Corte batata e frango em pedaços regulares e tempere separadamente. Divida azeite, páprica e sal entre os dois; use limão no frango.",
+        "Asse a batata a 190 °C, mexendo na metade do tempo, até amaciar. Reserve.",
+        "Asse o frango em uma camada, vire na metade e confira 74 °C no centro. Sirva com a batata."
+      ],
+      "tags": [
+        "air fryer",
+        "almoço",
+        "jantar"
+      ],
+      "alergenicos_identificados": [],
+      "estado_alergenicos": "triagem preliminar; conferir derivados, rótulos e contaminação cruzada",
+      "revisao": "texto conferido; teste culinário pendente",
+      "photo": null,
+      "freezer": null,
+      "demanda": {
+        "termo": "Peito de frango na air fryer",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente"
+    },
+    {
+      "id": "crepioca-de-queijo-e-tomate",
+      "title": "Crepioca de queijo e tomate",
+      "category": "Lanches",
+      "yield_text": "2 unidades",
+      "ingredients": [
+        "2 ovos",
+        "60 g goma hidratada de tapioca",
+        "60 g queijo minas",
+        "90 g tomate",
+        "1 g sal",
+        "5 ml azeite"
+      ],
+      "steps": [
+        "Bata ovos, goma e sal até uniformizar. Divida em duas porções.",
+        "Unte a frigideira, adicione uma porção e vire quando a borda soltar e o centro firmar.",
+        "Recheie com queijo e tomate e dobre. Repita e aqueça até o queijo amolecer."
+      ],
+      "tags": [
+        "frigideira",
+        "café da manhã",
+        "rápido"
+      ],
+      "alergenicos_identificados": [
+        "ovo",
+        "leite"
+      ],
+      "estado_alergenicos": "triagem preliminar; conferir derivados, rótulos e contaminação cruzada",
+      "revisao": "texto conferido; teste culinário pendente",
+      "photo": null,
+      "freezer": null,
+      "demanda": {
+        "termo": "Crepioca fit",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente"
+    },
+    {
+      "id": "bolinho-de-arroz-com-cenoura-no-forno",
+      "title": "Bolinho de arroz com cenoura no forno",
+      "category": "Lanches",
+      "yield_text": "12 unidades",
+      "ingredients": [
+        "300 g arroz cozido",
+        "100 g cenoura",
+        "2 ovos",
+        "60 g parmesão",
+        "45 g farinha de trigo",
+        "10 ml azeite"
+      ],
+      "steps": [
+        "Misture arroz, cenoura ralada, ovos, parmesão e farinha. Deixe repousar 5 minutos.",
+        "Modele em porções achatadas e disponha em assadeira untada com azeite.",
+        "Asse a 200 °C por 20 a 25 minutos, virando quando estiverem firmes; confira 74 °C no centro se usar arroz refrigerado."
+      ],
+      "tags": [
+        "forno",
+        "reaproveitamento",
+        "econômico"
+      ],
+      "alergenicos_identificados": [
+        "ovo",
+        "leite",
+        "trigo"
+      ],
+      "estado_alergenicos": "triagem preliminar; conferir derivados, rótulos e contaminação cruzada",
+      "revisao": "texto conferido; teste culinário pendente",
+      "photo": null,
+      "freezer": null,
+      "demanda": {
+        "termo": "Bolinho de arroz",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente"
+    },
+    {
+      "id": "batata-rustica-com-paprica-na-air-fryer",
+      "title": "Batata rústica com páprica na air fryer",
+      "category": "Lanches",
+      "yield_text": "3 porções",
+      "ingredients": [
+        "600 g batata",
+        "15 ml azeite",
+        "4 g páprica defumada",
+        "3 g sal",
+        "2 g alho em pó"
+      ],
+      "steps": [
+        "Lave a batata, corte em gomos e seque bem. Misture com azeite e temperos.",
+        "Disponha sem amontoar na cesta. Asse a 190 °C por 20 a 27 minutos, sacudindo na metade.",
+        "Retire quando o centro estiver macio e as bordas douradas."
+      ],
+      "tags": [
+        "vegana",
+        "air fryer",
+        "econômico"
+      ],
+      "alergenicos_identificados": [],
+      "estado_alergenicos": "triagem preliminar; conferir derivados, rótulos e contaminação cruzada",
+      "revisao": "texto conferido; teste culinário pendente",
+      "photo": null,
+      "freezer": null,
+      "demanda": {
+        "termo": "Batata frita na air fryer",
+        "url": "https://trends.withgoogle.com/year-in-search/2025/br/",
+        "tipo": "crescimento de busca, Brasil 2025",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente"
+    },
+    {
+      "id": "bolo-de-cenoura-com-calda-de-chocolate",
+      "title": "Bolo de cenoura com calda de chocolate",
+      "category": "Sobremesas",
+      "yield_text": "10 fatias",
+      "ingredients": [
+        "250 g cenoura",
+        "3 ovos",
+        "120 ml óleo",
+        "190 g açúcar",
+        "230 g farinha de trigo",
+        "12 g fermento químico",
+        "90 ml leite",
+        "30 g cacau em pó",
+        "65 g açúcar para a calda",
+        "15 g manteiga"
+      ],
+      "steps": [
+        "Bata cenoura, ovos, óleo e 190 g de açúcar. Passe para uma tigela e incorpore farinha e fermento.",
+        "Despeje em forma untada e asse a 180 °C por 35 a 42 minutos, até um palito sair limpo.",
+        "Aqueça o leite, cacau, açúcar da calda e manteiga, mexendo até engrossar levemente. Espalhe sobre o bolo."
+      ],
+      "tags": [
+        "forno",
+        "clássico",
+        "café da tarde"
+      ],
+      "alergenicos_identificados": [
+        "trigo",
+        "ovo",
+        "leite"
+      ],
+      "estado_alergenicos": "triagem preliminar; conferir derivados, rótulos e contaminação cruzada",
+      "revisao": "texto conferido; teste culinário pendente",
+      "photo": null,
+      "freezer": null,
+      "demanda": {
+        "termo": "Bolo de cenoura",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "youtube_referencia": "https://www.youtube.com/watch?v=sZkzlk6R67w"
+    },
+    {
+      "id": "pudim-de-leite-condensado-em-banho-maria",
+      "title": "Pudim de leite condensado em banho-maria",
+      "category": "Sobremesas",
+      "yield_text": "8 porções",
+      "ingredients": [
+        "110 g açúcar",
+        "40 ml água",
+        "395 g leite condensado",
+        "380 ml leite",
+        "3 ovos"
+      ],
+      "steps": [
+        "Faça um caramelo âmbar com açúcar e água em fogo médio e espalhe na forma.",
+        "Misture ovos, leite condensado e leite sem bater demais. Peneire sobre o caramelo e cubra a forma.",
+        "Asse em banho-maria a 160 °C até firmar nas bordas e o centro tremer pouco. Deixe baixar o calor, leve à geladeira até firmar bem e desenforme frio."
+      ],
+      "tags": [
+        "forno",
+        "clássico",
+        "geladeira"
+      ],
+      "alergenicos_identificados": [
+        "leite",
+        "ovo"
+      ],
+      "estado_alergenicos": "triagem preliminar; conferir derivados, rótulos e contaminação cruzada",
+      "revisao": "texto conferido; teste culinário pendente",
+      "photo": null,
+      "freezer": null,
+      "demanda": {
+        "termo": "Pudim de leite condensado",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente"
+    },
+    {
+      "id": "bolo-de-fuba-com-erva-doce",
+      "title": "Bolo de fubá com erva-doce",
+      "category": "Sobremesas",
+      "yield_text": "10 fatias",
+      "ingredients": [
+        "170 g fubá",
+        "90 g farinha de trigo",
+        "170 g açúcar",
+        "3 ovos",
+        "220 ml leite",
+        "85 ml óleo",
+        "12 g fermento químico",
+        "3 g erva-doce"
+      ],
+      "steps": [
+        "Misture ovos, açúcar, leite e óleo. Adicione fubá, farinha e erva-doce e mexa só até ficar uniforme.",
+        "Incorpore o fermento e despeje em forma untada.",
+        "Asse a 180 °C por 30 a 40 minutos, até firmar e dourar. Espere amornar antes de cortar."
+      ],
+      "tags": [
+        "forno",
+        "clássico",
+        "café da tarde"
+      ],
+      "alergenicos_identificados": [
+        "trigo",
+        "ovo",
+        "leite"
+      ],
+      "estado_alergenicos": "triagem preliminar; conferir derivados, rótulos e contaminação cruzada",
+      "revisao": "texto conferido; teste culinário pendente",
+      "photo": null,
+      "freezer": null,
+      "demanda": {
+        "termo": "Bolo de fubá simples",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente"
+    },
+    {
+      "id": "frango-xadrez-com-pimentoes",
+      "title": "Frango xadrez com pimentões",
+      "category": "Refeições",
+      "yield_text": "4 porções",
+      "ingredients": [
+        "600 g peito de frango",
+        "220 g pimentão",
+        "130 g cebola",
+        "40 ml shoyu",
+        "10 g amido de milho",
+        "160 ml água",
+        "20 ml óleo",
+        "50 g amendoim torrado"
+      ],
+      "steps": [
+        "Corte frango, cebola e pimentões em cubos. Dissolva o amido na água fria e junte shoyu.",
+        "Doure o frango em levas no óleo. Retire e salteie cebola e pimentões até ficarem firmes.",
+        "Volte o frango, adicione o molho e cozinhe até engrossar e o frango chegar a 74 °C no centro. Finalize com amendoim."
+      ],
+      "tags": [
+        "frigideira",
+        "jantar"
+      ],
+      "alergenicos_identificados": [
+        "soja",
+        "trigo",
+        "amendoim"
+      ],
+      "estado_alergenicos": "triagem preliminar; conferir derivados, rótulos e contaminação cruzada",
+      "revisao": "texto conferido; teste culinário pendente",
+      "photo": null,
+      "freezer": null,
+      "demanda": {
+        "termo": "Frango xadrez",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente"
+    },
+    {
+      "id": "panqueca-de-carne-moida-ao-tomate",
+      "title": "Panqueca de carne moída ao tomate",
+      "category": "Pães e massas",
+      "yield_text": "4 porções",
+      "ingredients": [
+        "160 g farinha de trigo",
+        "300 ml leite",
+        "2 ovos",
+        "20 ml óleo",
+        "400 g carne moída",
+        "100 g cebola",
+        "350 g passata",
+        "5 g sal"
+      ],
+      "steps": [
+        "Bata farinha, leite, ovos, metade do óleo e uma pitada do sal. Faça discos finos numa frigideira antiaderente.",
+        "Refogue cebola e carne no óleo restante até atingir 71 °C; junte parte da passata e o restante do sal e deixe reduzir.",
+        "Recheie os discos, enrole, cubra com a passata restante e aqueça em forno a 190 °C até borbulhar."
+      ],
+      "tags": [
+        "frigideira",
+        "forno",
+        "almoço"
+      ],
+      "alergenicos_identificados": [
+        "trigo",
+        "ovo",
+        "leite"
+      ],
+      "estado_alergenicos": "triagem preliminar; conferir derivados, rótulos e contaminação cruzada",
+      "revisao": "texto conferido; teste culinário pendente",
+      "photo": null,
+      "freezer": null,
+      "demanda": {
+        "termo": "Massa de panqueca",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente"
+    },
+    {
+      "id": "pave-de-chocolate-e-baunilha",
+      "title": "Pavê de chocolate e baunilha",
+      "category": "Sobremesas",
+      "yield_text": "8 porções",
+      "ingredients": [
+        "680 ml leite",
+        "395 g leite condensado",
+        "30 g amido de milho",
+        "5 ml extrato de baunilha",
+        "140 g chocolate meio amargo",
+        "180 g biscoito maisena"
+      ],
+      "steps": [
+        "Reserve 80 ml do leite para os biscoitos. Dissolva o amido nos 600 ml restantes, junte leite condensado e cozinhe mexendo até engrossar.",
+        "Separe metade do creme e derreta o chocolate nela; aromatize a outra metade com baunilha.",
+        "Alterne biscoitos rapidamente umedecidos com os cremes e gele até firmar."
+      ],
+      "tags": [
+        "geladeira",
+        "festa",
+        "clássico"
+      ],
+      "alergenicos_identificados": [
+        "leite",
+        "trigo"
+      ],
+      "estado_alergenicos": "triagem preliminar; conferir derivados, rótulos e contaminação cruzada",
+      "revisao": "texto conferido; teste culinário pendente",
+      "photo": null,
+      "freezer": null,
+      "demanda": {
+        "termo": "Pavê de chocolate",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente"
+    },
+    {
+      "id": "fricasse-de-frango-com-milho",
+      "title": "Fricassê de frango com milho",
+      "category": "Refeições",
+      "yield_text": "4 porções",
+      "ingredients": [
+        "450 g frango cozido e desfiado",
+        "170 g milho cozido escorrido",
+        "160 g creme de leite",
+        "120 g requeijão",
+        "100 g cebola",
+        "10 ml óleo",
+        "100 g muçarela",
+        "60 g batata palha"
+      ],
+      "steps": [
+        "Bata o milho, o creme de leite e o requeijão até formar um creme.",
+        "Refogue a cebola no óleo e incorpore o frango e o creme. Passe para um refratário e cubra com muçarela.",
+        "Asse a 200 °C até dourar e atingir 74 °C no centro. Distribua a batata palha ao servir."
+      ],
+      "tags": [
+        "forno",
+        "almoço",
+        "jantar"
+      ],
+      "alergenicos_identificados": [
+        "leite"
+      ],
+      "demanda": {
+        "termo": "Fricassê de frango",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": null,
+      "freezer": null,
+      "youtube_referencia": "https://www.youtube.com/watch?v=tdmYvH1CR9k"
+    },
+    {
+      "id": "estrogonofe-de-carne",
+      "title": "Estrogonofe de carne",
+      "category": "Refeições",
+      "yield_text": "4 porções",
+      "ingredients": [
+        "600 g alcatra em tiras",
+        "100 g cebola",
+        "150 g cogumelos",
+        "20 ml óleo",
+        "30 g extrato de tomate",
+        "12 g mostarda",
+        "200 g creme de leite",
+        "5 g sal"
+      ],
+      "steps": [
+        "Seque e doure a carne no óleo em levas. Reserve.",
+        "Refogue cebola e cogumelos até a água evaporar. Junte extrato, mostarda e sal e mexa por um minuto.",
+        "Volte a carne até o ponto desejado, incorpore creme de leite em fogo baixo e aqueça sem deixar ferver vigorosamente."
+      ],
+      "tags": [
+        "panela",
+        "almoço",
+        "rápido"
+      ],
+      "alergenicos_identificados": [
+        "leite",
+        "mostarda"
+      ],
+      "demanda": {
+        "termo": "Estrogonofe de carne simples",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": null,
+      "freezer": null,
+      "youtube_referencia": "https://www.youtube.com/watch?v=qqmXk6VkmuQ"
+    },
+    {
+      "id": "almondegas-assadas-ao-tomate",
+      "title": "Almôndegas assadas ao tomate",
+      "category": "Refeições",
+      "yield_text": "4 porções",
+      "ingredients": [
+        "500 g carne bovina moída",
+        "45 g farinha de rosca",
+        "1 ovo",
+        "60 g cebola ralada",
+        "2 dentes de alho",
+        "5 g sal",
+        "400 g passata de tomate",
+        "15 ml azeite",
+        "6 g salsinha"
+      ],
+      "steps": [
+        "Misture carne, farinha, ovo, cebola, metade do alho, sal e salsinha até dar liga. Modele 16 unidades.",
+        "Disponha em assadeira untada e asse a 210 °C até firmarem e atingirem 71 °C no centro.",
+        "Aqueça a passata com azeite e o alho restante; envolva as almôndegas no molho e sirva."
+      ],
+      "tags": [
+        "forno",
+        "almoço",
+        "marmita"
+      ],
+      "alergenicos_identificados": [
+        "trigo",
+        "ovo"
+      ],
+      "demanda": {
+        "termo": "Almôndegas",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": null,
+      "freezer": null
+    },
+    {
+      "id": "canja-de-frango-arroz-e-cenoura",
+      "title": "Canja de frango, arroz e cenoura",
+      "category": "Refeições",
+      "yield_text": "4 porções",
+      "ingredients": [
+        "400 g peito de frango",
+        "110 g arroz",
+        "160 g cenoura",
+        "100 g cebola",
+        "2 dentes de alho",
+        "15 ml óleo",
+        "1 litro de água",
+        "5 g sal",
+        "8 g salsinha"
+      ],
+      "steps": [
+        "Refogue cebola e alho no óleo. Junte frango, água e sal e cozinhe até o frango atingir 74 °C.",
+        "Retire e desfie o frango. No caldo, cozinhe o arroz e a cenoura em cubos até amaciarem.",
+        "Volte o frango à panela, aqueça, ajuste a consistência e finalize com salsinha."
+      ],
+      "tags": [
+        "panela",
+        "econômica",
+        "refeição leve"
+      ],
+      "alergenicos_identificados": [],
+      "demanda": {
+        "termo": "Canja de galinha rápida",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": null,
+      "freezer": null
+    },
+    {
+      "id": "salmao-de-forno-com-limao-e-ervas",
+      "title": "Salmão de forno com limão e ervas",
+      "category": "Refeições",
+      "yield_text": "4 porções",
+      "ingredients": [
+        "600 g filé de salmão",
+        "20 ml azeite",
+        "25 ml suco de limão",
+        "1 dente de alho",
+        "8 g salsinha",
+        "4 g sal"
+      ],
+      "steps": [
+        "Misture azeite, alho, limão e sal. Pincele no salmão e disponha em travessa com a pele para baixo.",
+        "Asse a 200 °C até chegar a 63 °C no centro, conferindo com termômetro.",
+        "Finalize com salsinha picada e sirva."
+      ],
+      "tags": [
+        "forno",
+        "jantar",
+        "rápido"
+      ],
+      "alergenicos_identificados": [
+        "peixe"
+      ],
+      "demanda": {
+        "termo": "Filé de salmão ao forno facílimo",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": null,
+      "freezer": null
+    },
+    {
+      "id": "sopa-de-legumes-com-macarrao",
+      "title": "Sopa de legumes com macarrão",
+      "category": "Refeições",
+      "yield_text": "4 porções",
+      "ingredients": [
+        "120 g macarrão sem ovo",
+        "250 g batata",
+        "160 g cenoura",
+        "150 g abobrinha",
+        "100 g cebola",
+        "200 g tomate",
+        "15 ml azeite",
+        "1 litro de água",
+        "5 g sal"
+      ],
+      "steps": [
+        "Refogue a cebola em azeite e junte tomate, água e sal.",
+        "Cozinhe batata e cenoura em cubos até começarem a amaciar. Junte abobrinha e macarrão.",
+        "Cozinhe até a massa ficar macia e acerte a consistência com água quente, se precisar."
+      ],
+      "tags": [
+        "vegana",
+        "panela",
+        "econômica"
+      ],
+      "alergenicos_identificados": [
+        "trigo"
+      ],
+      "demanda": {
+        "termo": "Sopa de legumes com macarrão",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": null,
+      "freezer": null
+    },
+    {
+      "id": "lasanha-de-carne-moida",
+      "title": "Lasanha de carne moída",
+      "category": "Pães e massas",
+      "yield_text": "6 porções",
+      "ingredients": [
+        "320 g massa seca de lasanha",
+        "650 g carne bovina moída",
+        "700 g passata",
+        "120 g cebola",
+        "3 dentes de alho",
+        "20 ml azeite",
+        "250 g muçarela",
+        "50 g parmesão",
+        "6 g sal"
+      ],
+      "steps": [
+        "Refogue cebola e alho no azeite, doure a carne até 71 °C e encorpe com passata e sal. Prepare a massa conforme a embalagem.",
+        "Monte alternando molho, massa e muçarela. Termine com molho e parmesão.",
+        "Cubra e asse a 190 °C até a massa ficar macia. Destampe para dourar e deixe repousar antes de cortar."
+      ],
+      "tags": [
+        "forno",
+        "almoço em família"
+      ],
+      "alergenicos_identificados": [
+        "trigo",
+        "leite"
+      ],
+      "demanda": {
+        "termo": "Lasanha de carne moída",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": null,
+      "freezer": null
+    },
+    {
+      "id": "panquecas-americanas-fofas",
+      "title": "Panquecas americanas fofas",
+      "category": "Pães e massas",
+      "yield_text": "8 unidades",
+      "ingredients": [
+        "190 g farinha de trigo",
+        "210 ml leite",
+        "1 ovo",
+        "22 g açúcar",
+        "20 g manteiga derretida",
+        "9 g fermento químico",
+        "2 g sal"
+      ],
+      "steps": [
+        "Misture farinha, açúcar, sal e fermento. Bata à parte leite, ovo e manteiga.",
+        "Junte as misturas e mexa só até umedecer a farinha, deixando alguns grumos.",
+        "Divida em oito discos numa frigideira antiaderente aquecida. Vire quando surgirem bolhas e cozinhe o outro lado até firmar."
+      ],
+      "tags": [
+        "frigideira",
+        "café da manhã"
+      ],
+      "alergenicos_identificados": [
+        "trigo",
+        "leite",
+        "ovo"
+      ],
+      "demanda": {
+        "termo": "Panqueca americana",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": null,
+      "freezer": null
+    },
+    {
+      "id": "bolinho-de-chuva-com-acucar-e-canela",
+      "title": "Bolinho de chuva com açúcar e canela",
+      "category": "Lanches",
+      "yield_text": "18 unidades",
+      "ingredients": [
+        "200 g farinha de trigo",
+        "1 ovo",
+        "115 ml leite",
+        "35 g açúcar",
+        "6 g fermento químico",
+        "500 ml óleo para fritar",
+        "30 g açúcar para finalizar",
+        "3 g canela"
+      ],
+      "steps": [
+        "Misture ovo, leite e açúcar. Junte farinha e fermento até formar massa que caia da colher lentamente.",
+        "Aqueça o óleo a cerca de 170 °C e frite pequenas porções em levas, virando até dourar por igual e cozinhar no centro.",
+        "Escorra e passe no açúcar misturado com a canela."
+      ],
+      "tags": [
+        "lanche",
+        "clássico"
+      ],
+      "alergenicos_identificados": [
+        "trigo",
+        "ovo",
+        "leite"
+      ],
+      "demanda": {
+        "termo": "Bolinho de chuva",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": null,
+      "freezer": null,
+      "youtube_referencia": "https://www.youtube.com/watch?v=37X0_WEdOHg"
+    },
+    {
+      "id": "pipoca-doce-de-panela",
+      "title": "Pipoca doce de panela",
+      "category": "Lanches",
+      "yield_text": "4 porções",
+      "ingredients": [
+        "75 g milho de pipoca",
+        "15 ml óleo",
+        "85 g açúcar",
+        "30 ml água"
+      ],
+      "steps": [
+        "Estoure o milho no óleo em panela tampada, sacudindo com cuidado e desligando quando os estouros rarearem.",
+        "Em outra panela, ferva açúcar e água sem mexer até obter caramelo claro.",
+        "Despeje aos poucos sobre a pipoca já estourada, mexa com uma espátula e espalhe até esfriar."
+      ],
+      "tags": [
+        "vegana",
+        "lanche",
+        "econômica"
+      ],
+      "alergenicos_identificados": [],
+      "demanda": {
+        "termo": "Pipoca doce",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": null,
+      "freezer": null
+    },
+    {
+      "id": "tabule-com-pepino-e-hortela",
+      "title": "Tabule com pepino e hortelã",
+      "category": "Lanches",
+      "yield_text": "4 porções",
+      "ingredients": [
+        "90 g trigo para quibe",
+        "250 g tomate",
+        "180 g pepino",
+        "40 g salsinha",
+        "12 g hortelã",
+        "35 ml suco de limão",
+        "25 ml azeite",
+        "4 g sal"
+      ],
+      "steps": [
+        "Hidrate o trigo conforme a embalagem, escorra e aperte bem para remover a água.",
+        "Corte tomate e pepino em cubos pequenos e pique as ervas.",
+        "Misture com o trigo, limão, azeite e sal. Gele por 20 minutos antes de servir."
+      ],
+      "tags": [
+        "vegana",
+        "salada",
+        "acompanhamento"
+      ],
+      "alergenicos_identificados": [
+        "trigo"
+      ],
+      "demanda": {
+        "termo": "Tabule",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": null,
+      "freezer": null
+    },
+    {
+      "id": "mousse-de-maracuja-de-geladeira",
+      "title": "Mousse de maracujá de geladeira",
+      "category": "Sobremesas",
+      "yield_text": "6 porções",
+      "ingredients": [
+        "395 g leite condensado",
+        "200 g creme de leite",
+        "130 ml suco concentrado de maracujá",
+        "40 g polpa de maracujá"
+      ],
+      "steps": [
+        "Bata leite condensado e creme de leite até homogeneizar. Junte o suco aos poucos e bata brevemente.",
+        "Distribua em taças e leve à geladeira por 4 horas ou até firmar.",
+        "Cubra com uma colherada da polpa antes de servir."
+      ],
+      "tags": [
+        "geladeira",
+        "clássico",
+        "rápida"
+      ],
+      "alergenicos_identificados": [
+        "leite"
+      ],
+      "demanda": {
+        "termo": "Mousse de maracujá",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": null,
+      "freezer": null,
+      "youtube_referencia": "https://www.youtube.com/watch?v=0fG6mtWjYb0"
+    },
+    {
+      "id": "bolo-simples-de-chocolate-sem-ovo-na-massa",
+      "title": "Bolo simples de chocolate sem ovo na massa",
+      "category": "Sobremesas",
+      "yield_text": "10 fatias",
+      "ingredients": [
+        "240 g farinha de trigo",
+        "180 g açúcar",
+        "35 g cacau em pó",
+        "270 ml água morna",
+        "80 ml óleo",
+        "12 g fermento químico",
+        "2 g sal"
+      ],
+      "steps": [
+        "Misture farinha, açúcar, cacau e sal. Adicione água e óleo e mexa até desaparecerem os pontos secos.",
+        "Incorpore fermento e transfira para uma forma untada.",
+        "Asse a 180 °C por cerca de 35 minutos ou até um palito sair sem massa crua. Deixe amornar antes de desenformar."
+      ],
+      "tags": [
+        "forno",
+        "café da tarde",
+        "vegana na formulação"
+      ],
+      "alergenicos_identificados": [
+        "trigo"
+      ],
+      "demanda": {
+        "termo": "Bolo de chocolate simples",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": null,
+      "freezer": null,
+      "youtube_referencia": "https://www.youtube.com/watch?v=NtoBAipB4kw"
+    },
+    {
+      "id": "bolo-de-banana-e-aveia",
+      "title": "Bolo de banana e aveia",
+      "category": "Sobremesas",
+      "yield_text": "8 fatias",
+      "ingredients": [
+        "300 g banana madura",
+        "2 ovos",
+        "150 g farinha de aveia",
+        "45 ml óleo",
+        "10 g fermento químico",
+        "2 g canela"
+      ],
+      "steps": [
+        "Amasse as bananas. Misture ovos e óleo e, em seguida, adicione aveia e canela.",
+        "Incorpore fermento e coloque a massa em forma pequena untada.",
+        "Asse a 180 °C por 30 a 38 minutos, até firmar e um palito sair sem massa crua."
+      ],
+      "tags": [
+        "forno",
+        "café da manhã"
+      ],
+      "alergenicos_identificados": [
+        "aveia",
+        "ovo"
+      ],
+      "demanda": {
+        "termo": "Bolo de banana com aveia",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": null,
+      "freezer": null,
+      "youtube_referencia": "https://www.youtube.com/watch?v=1Qz47UHtVgQ"
+    },
+    {
+      "id": "bolo-de-milho-de-lata-no-liquidificador",
+      "title": "Bolo de milho de lata no liquidificador",
+      "category": "Sobremesas",
+      "yield_text": "10 fatias",
+      "ingredients": [
+        "170 g milho em conserva escorrido",
+        "180 ml leite",
+        "3 ovos",
+        "150 g açúcar",
+        "70 ml óleo",
+        "160 g flocão de milho",
+        "12 g fermento químico"
+      ],
+      "steps": [
+        "Bata milho, leite, ovos, açúcar e óleo até ficar uniforme. Junte flocão e bata por poucos segundos.",
+        "Incorpore fermento e transfira para uma forma untada.",
+        "Asse a 180 °C por 35 a 45 minutos, até dourar e firmar o centro."
+      ],
+      "tags": [
+        "forno",
+        "clássico",
+        "café da tarde"
+      ],
+      "alergenicos_identificados": [
+        "ovo",
+        "leite"
+      ],
+      "demanda": {
+        "termo": "Bolo de milho de lata no liquidificador",
+        "url": "https://www.tudogostoso.com.br/",
+        "tipo": "lista de receitas mais buscadas do TudoGostoso",
+        "escopo": "tipo de prato; não mede procura pela variante exata"
+      },
+      "teste_culinario": "pendente",
+      "revisao_alergenicos": "pendente",
+      "photo": null,
+      "freezer": null
+    }
+  ],
+  "salvos_revisados": {}
+}
