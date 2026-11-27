@@ -244,7 +244,7 @@ def generate_demo(options, links, reviewed=None, *, bonuses=None):
         heights = [ingredients_heading+12]*2
         cols = (len(recipe['ingredients'])+1)//2
         for number, item in enumerate(recipe['ingredients']):
-            if recipe.get('source'):
+            if isinstance(item, str):
                 ingredient = display = item
             else:
                 amount, unit, ingredient = item
