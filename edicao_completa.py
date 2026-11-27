@@ -1,6 +1,7 @@
 from collections import defaultdict
 from decimal import Decimal
 
+from acervo_confeitaria import carregar_confeitaria
 from livro import generate_demo, normalize
 
 DIAS = ('Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado', 'Domingo')
@@ -27,7 +28,7 @@ def selecionar(recovered, catalog, categories):
 def montar_bonus(recipes, portions):
     meals = [(i, r) for i, r in enumerate(recipes) if r.get('meal') and r.get('shopping')][:7]
     frozen = [(i, r) for i, r in enumerate(recipes)
-              if r.get('photo') and all(r.get('freezer', {}).get(key)
+              if r.get('photo') and all((r.get('freezer') or {}).get(key)
                     for key in ('congelar', 'acondicionar', 'servir', 'fonte'))]
     if len(meals) < 7 or not frozen:
         raise ValueError('O acervo ainda não cobre sete refeições ou o guia verificado de freezer.')
@@ -70,6 +71,7 @@ def montar_bonus(recipes, portions):
 
 def gerar_edicao(options, links, recovered, catalog):
     """Build the full edition or report a catalog gap before rendering."""
-    recipes = selecionar(recovered, catalog, options['categorias'])
+    recipes = selecionar(recovered, [*catalog, *carregar_confeitaria()], options['categorias'])
     bonuses = montar_bonus(recipes, options['pessoas'])
     return generate_demo(options, links, recipes, bonuses=bonuses)
+

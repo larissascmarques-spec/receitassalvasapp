@@ -244,7 +244,7 @@ def generate_demo(options, links, reviewed=None, *, bonuses=None):
         heights = [ingredients_heading+12]*2
         cols = (len(recipe['ingredients'])+1)//2
         for number, item in enumerate(recipe['ingredients']):
-            if recipe.get('source'):
+            if recipe.get('source') or recipe.get('fixed_yield'):
                 ingredient = display = item
             else:
                 amount, unit, ingredient = item
@@ -314,3 +314,4 @@ def generate_demo(options, links, reviewed=None, *, bonuses=None):
             number += 1
     pdf.save()
     return stream.getvalue()
+
