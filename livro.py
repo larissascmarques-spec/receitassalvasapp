@@ -70,7 +70,7 @@ def reviewed_recipes(path, links):
     return recipes
 
 
-def generate_demo(options, links, reviewed=None):
+def generate_demo(options, links, reviewed=None, *, bonuses=None):
     recipes = select_recipes(options) if reviewed is None else reviewed
     if not recipes:
         return None
@@ -206,6 +206,11 @@ def generate_demo(options, links, reviewed=None):
             end = block(x+10,y+139,card_width-20,recipe['title'],size=16,leading=17,font='Times-Roman')
             text(x+10,max(y+174,end+10),f'Página {recipe_start+index:02d}','Helvetica-Bold',9,GREEN)
             link(f'receita-{index}',x,y,x+card_width,y+190)
+        if bonuses:
+            for i, label in enumerate(('Cardápio e compras', 'Guia do freezer', 'Índice por ingrediente')):
+                x = M+i*167
+                text(x,768,label,'Helvetica-Bold',9,GREEN)
+                link(f'bonus-{i}',x,755,x+157,777)
         footer(2+offset//index_size)
         pdf.showPage()
 
@@ -282,5 +287,30 @@ def generate_demo(options, links, reviewed=None):
             row_bottom=max(row_bottom,end+11)
         footer(recipe_start+index,back=True)
         pdf.showPage()
+    if bonuses:
+        number = recipe_start + len(recipes)
+        for bonus_index, (title, rows) in enumerate(bonuses):
+            bookmark(f'bonus-{bonus_index}')
+            y = 800
+            for label, recipe_index in rows:
+                content = label if recipe_index is None else f'{label} · pág. {recipe_start+recipe_index:02d}'
+                _, height = paragraph(content,W-2*M)
+                if y+height > 775:
+                    if y != 800:
+                        footer(number,back=True)
+                        pdf.showPage()
+                        number += 1
+                    rect(0,0,W,H,IVORY)
+                    rect(0,0,W,120,GREEN)
+                    text(M,41,f'BÔNUS {bonus_index+1}','Helvetica-Bold',9,gold)
+                    block(M,57,W-2*M,title,size=30,leading=31,font='Times-Roman',color=IVORY)
+                    y = 148
+                top = y
+                y = block(M,y,W-2*M,content,color=GREEN if recipe_index is not None else INK)+8
+                if recipe_index is not None:
+                    link(f'receita-{recipe_index}',M,top,W-M,y-2)
+            footer(number,back=True)
+            pdf.showPage()
+            number += 1
     pdf.save()
     return stream.getvalue()
