@@ -282,6 +282,50 @@ async def order_page(token: str):
     return HTMLResponse(page, headers=PRIVATE)
 
 
+
+def recipes_from_captions(links):
+    recipes = []
+    headings = re.compile(r'\W*(ingredientes|modo de preparo|modo de fazer|preparo)\s*:?\s*', re.I)
+    ending = re.compile(r'^\W*(?:valores|resultado|créditos|comente|salva|quer mais|siga|rendimento)\b|^\s*#', re.I)
+    for link in links:
+        rows = [line.strip() for line in link.get('legenda', '').splitlines() if line.strip()]
+        markers = [(i, m[1].casefold()) for i, row in enumerate(rows) if (m := headings.fullmatch(row))]
+        if len(markers) != 2 or markers[0][1] != 'ingredientes' or markers[1][1] == 'ingredientes':
+            continue
+        start, prepare = markers[0][0], markers[1][0]
+        if start == 0:
+            continue
+        title = re.sub(r'^[^\w]+|[^\w)]+$', '', rows[0]).strip()
+        ingredients = [re.sub(r'^[•–—-]\s*', '', row) for row in rows[start+1:prepare]]
+        steps = []
+        for row in rows[prepare+1:]:
+            if ending.search(row):
+                break
+            step = re.sub(r'^(?:\d+[\ufe0f\u20e3]+|\d+[.)-])\s*', '', row)
+            step = re.sub(r'[\U0001F000-\U0001FAFF\u200d\ufe0f]', '', step).strip()
+            if not any(ch.isalpha() for ch in step):
+                break
+            steps.append(step)
+        if not (5 <= len(title) <= 65 and 2 <= len(ingredients) <= 9 and
+                sum(bool(re.match(r'^\d', item)) for item in ingredients) >= 2 and
+                all(len(item) <= 100 for item in ingredients) and 2 <= len(steps) <= 6 and
+                all(15 <= len(step) <= 240 for step in steps)):
+            continue
+        if re.search(r'\b(?:no vídeo|na bio|link na|em breve)\b', ' '.join(steps), re.I):
+            continue
+        visual_examples = {
+            'brownie de iogurte grego proteico': 'brownie.jpg',
+            'mousse fit de limão': 'mousse.jpg',
+        }
+        recipes.append(dict(title=title, category='Receitas dos Salvos',
+                            photo=visual_examples.get(title.casefold()),
+                            yield_text='não informado neste teste',
+                            ingredients=ingredients, steps=steps, source=link['url']))
+        if len(recipes) == 2:
+            break
+    return recipes
+
+
 @app.get('/api/pedido/{token}')
 @app.post('/api/pedido/{token}')
 async def order(token: str, request: Request):
@@ -307,9 +351,14 @@ async def order(token: str, request: Request):
             raw.extend(data)
         options = preferences(request.headers.get('x-preferencias', '{}'))
         links = import_saved(bytes(raw), request.headers.get('x-arquivo'))
-        if not links or any(item['url'] not in sample_urls for item in links):
-            return problem('Nesta homologação, use o JSON fictício fornecido. Solicitações com dados reais ainda não estão disponíveis.', 422)
-        pdf = await run_in_threadpool(generate_demo, options, links)
+        synthetic = bool(links) and all(item['url'] in sample_urls for item in links)
+        reviewed = None if synthetic else recipes_from_captions(links)
+        if not synthetic and not reviewed:
+            return problem('Nenhuma legenda com ingredientes e preparo completos foi reconhecida neste teste. Se precisar, fale com o suporte.', 422)
+        try:
+            pdf = await run_in_threadpool(generate_demo, options, links, reviewed)
+        except ValueError:
+            return problem('Uma receita ficou longa demais para a amostra. Fale com o suporte para revisar o arquivo.', 422)
         if pdf is None:
             return JSONResponse({'status': 'sem_fichas'}, headers=PRIVATE)
         if len(pdf) > MAX_BODY:
