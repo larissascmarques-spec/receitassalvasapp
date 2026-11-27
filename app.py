@@ -13,6 +13,7 @@ from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, Redirect
 from starlette.concurrency import run_in_threadpool
 from vercel import blob
 
+from edicao_completa import gerar_edicao
 from livro import generate_demo
 from servidor import TOKEN, import_saved, preferences, token_hash
 
@@ -342,8 +343,19 @@ async def order(token: str, request: Request):
         if request.method == 'GET':
             return JSONResponse({'status': 'aguardando'}, headers=PRIVATE)
         record = await read_blob(path + '/pedido.json')
-        if record == b'{"origem":"hotmart"}':
-            return problem('Seu acesso foi ativado. A produção do livro personalizado ainda está indisponível.', 503)
+        paid = record == b'{"origem":"hotmart"}'
+        full_edition = paid or os.getenv('PEDIDOS_TESTAR_EDICAO_COMPLETA') == '1'
+        catalog = None
+        if full_edition:
+            catalog_raw = await read_blob('acervo/edicao-completa.json')
+            if catalog_raw is None:
+                return problem('O acervo revisado do livro completo ainda está em preparação.', 503)
+            try:
+                catalog = json.loads(catalog_raw)
+                if not isinstance(catalog['receitas'], list) or not isinstance(catalog['salvos_revisados'], dict):
+                    raise ValueError('Acervo inválido')
+            except (KeyError, TypeError, ValueError):
+                return problem('O acervo precisa de revisão antes da entrega.', 503)
         raw = bytearray()
         async for data in request.stream():
             if len(raw) + len(data) > MAX_BODY:
@@ -352,12 +364,22 @@ async def order(token: str, request: Request):
         options = preferences(request.headers.get('x-preferencias', '{}'))
         links = import_saved(bytes(raw), request.headers.get('x-arquivo'))
         synthetic = bool(links) and all(item['url'] in sample_urls for item in links)
-        reviewed = None if synthetic else recipes_from_captions(links)
-        if not synthetic and not reviewed:
+        reviewed = None if full_edition or synthetic else recipes_from_captions(links)
+        if not full_edition and not synthetic and not reviewed:
             return problem('Nenhuma legenda com ingredientes e preparo completos foi reconhecida neste teste. Se precisar, fale com o suporte.', 422)
         try:
-            pdf = await run_in_threadpool(generate_demo, options, links, reviewed)
-        except ValueError:
+            if full_edition:
+                recovered = []
+                for item in links:
+                    code = item['url'].rstrip('/').rsplit('/', 1)[-1]
+                    if code in catalog['salvos_revisados']:
+                        recovered.append(dict(catalog['salvos_revisados'][code], source=item['url']))
+                pdf = await run_in_threadpool(gerar_edicao, options, links, recovered, catalog['receitas'])
+            else:
+                pdf = await run_in_threadpool(generate_demo, options, links, reviewed)
+        except (TypeError, KeyError, ValueError):
+            if full_edition:
+                return problem('Ainda não foi possível montar 200 receitas com os três bônus para este pedido. O suporte pode ajudar.', 503)
             return problem('Uma receita ficou longa demais para a amostra. Fale com o suporte para revisar o arquivo.', 422)
         if pdf is None:
             return JSONResponse({'status': 'sem_fichas'}, headers=PRIVATE)
